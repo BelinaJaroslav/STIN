@@ -1,9 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\STINClient",
-    "\\STINInterfaces",
-    "\\STINServer"
+    "\\STINClient\\bin",
+    "\\STINClient\\bin\\Release",
+    "\\STINClient\\obj",
+    "\\STINClient\\obj\\Debug",
+    "\\STINServer\\bin",
+    "\\STINServer\\bin\\Release",
+    "\\STINServer\\obj",
+    "\\STINServer\\obj\\Debug",
+    "\\STINServer\\obj\\Debug\\TempPE"
   ],
   "SelectedNode": "\\STINProject.sln",
   "PreviewInSolutionExplorer": false
