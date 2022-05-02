@@ -44,7 +44,10 @@ namespace STINServer
 
         public HtmlDocument GetCurrentTime(TimeZone timeZone)
         {
-            throw new NotImplementedException();
+            string answer;
+            var val = DateTime.Now;
+            answer = string.Format("Aktuální čas serveru je: {0}", val.ToString("HH:mm:ss"));
+            return Wrapper.Wrap(answer);
         }
 
         public HtmlDocument GetUserID()
