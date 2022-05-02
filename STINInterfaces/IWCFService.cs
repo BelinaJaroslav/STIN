@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Windows.Forms;
 
 namespace STINInterfaces
 {
@@ -12,13 +13,12 @@ namespace STINInterfaces
     public interface IWCFService
     {
         [OperationContract]
-        string GetUserID();
+        HtmlDocument GetUserID();
 
         [OperationContract]
-        string GetCurrentTime();
-        string GetCurrentTime(TimeZone timeZone);
+        HtmlDocument GetCurrentTime(TimeZone timeZone);
 
         [OperationContract]
-        string GetCurrentRate();
+        HtmlDocument GetCurrentRate();
     }
 }
