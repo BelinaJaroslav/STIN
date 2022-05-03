@@ -10,13 +10,13 @@
         "projectName": "STINInterfaces",
         "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj",
         "frameworks": {
-          "net45": {
+          "net48": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net45": {}
+        "net48": {}
       }
     },
     "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj": {
@@ -25,7 +25,7 @@
         "projectName": "STINServer",
         "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj",
         "frameworks": {
-          "net45": {
+          "net48": {
             "projectReferences": {
               "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj": {
                 "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj"
@@ -35,7 +35,7 @@
         }
       },
       "frameworks": {
-        "net45": {}
+        "net48": {}
       }
     },
     "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj": {
@@ -52,15 +52,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "targetAlias": "net4.5",
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {
               "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj": {
                 "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj"
@@ -75,8 +75,8 @@
         }
       },
       "frameworks": {
-        "net45": {
-          "targetAlias": "net4.5",
+        "net48": {
+          "targetAlias": "net48",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
