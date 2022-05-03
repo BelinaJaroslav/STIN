@@ -15,7 +15,6 @@ namespace STINClient
     public partial class Form1 : Form
     {
         IWCFService server;
-        HtmlDocument doc;
         public Form1()
         {
             InitializeComponent();
@@ -30,8 +29,8 @@ namespace STINClient
 
         private void button1_Click(object sender, EventArgs e)
         {
-            doc = server.GetUserID();
-            webBrowser1.DocumentText = doc.ToString();
+
+            webBrowser1.DocumentText = server.GetUserID();
         }
         private void button2_Click(object sender, EventArgs e)
         {

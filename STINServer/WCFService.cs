@@ -14,13 +14,13 @@ namespace STINServer
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class WCFService : IWCFService
     {
-        public HtmlDocument GetCurrentRate()
+        public string GetCurrentRate()
         {
             return GetCurrentRateStatic();
         }
         
 
-        public static HtmlDocument GetCurrentRateStatic()
+        public static string GetCurrentRateStatic()
         {
             string answer;
             string URLString = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
@@ -39,7 +39,7 @@ namespace STINServer
             return Wrapper.Wrap(answer);
         }
 
-        public HtmlDocument GetCurrentTime(TimeZone timeZone)
+        public string GetCurrentTime(TimeZone timeZone)
         {
             string answer;
             var val = DateTime.Now;
@@ -47,7 +47,7 @@ namespace STINServer
             return Wrapper.Wrap(answer);
         }
 
-        public HtmlDocument GetUserID()
+        public string GetUserID()
         {
             string answer;
             OperationContext context = OperationContext.Current;
