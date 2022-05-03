@@ -13,12 +13,12 @@ namespace STINInterfaces
     public interface IWCFService
     {
         [OperationContract]
-        HtmlDocument GetUserID();
+        string GetUserID();
 
         [OperationContract]
-        HtmlDocument GetCurrentTime(TimeZone timeZone);
+        string GetCurrentTime(TimeZone timeZone);
 
         [OperationContract]
-        HtmlDocument GetCurrentRate();
+        string GetCurrentRate();
     }
 }
