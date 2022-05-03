@@ -1,6 +1,8 @@
-﻿using System;
+﻿using STINInterfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,6 +16,11 @@ namespace STINClient
         [STAThread]
         static void Main()
         {
+            ChannelFactory<IWCFService> channelFactory = 
+                new ChannelFactory<IWCFService>("STINServiceEndpoint");
+            IWCFService server = channelFactory.CreateChannel();
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
