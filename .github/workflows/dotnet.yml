@@ -22,9 +22,7 @@ jobs:
       - name: Setup VSTest
         uses: darenm/Setup-VSTest@v1
         
-      - name: Coverlet coverage test
-        uses: b3b00/coverlet-action@1.2.2
-
+      
       - name: Navigate to Workspace
         run: cd $GITHUB_WORKSPACE
 
@@ -37,3 +35,7 @@ jobs:
         
       - name: Run Tests
         run: vstest.console.exe .\XUnitTestProject1\bin\Release\net48\XUnitTestProject1.dll
+        
+      - name: Coverlet coverage test
+        uses: b3b00/coverlet-action@1.2.2
+
