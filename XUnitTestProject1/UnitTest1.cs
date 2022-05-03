@@ -13,7 +13,7 @@ namespace XUnitTestProject1
         {
             string testString = "<?xml version = \"1.0\" encoding = \"UTF-8\" ?>\n" +
                                 "<Cube time=\"2022 - 05 - 02\">\n" +
-                                "<Cube currency = \"USD\" rate = \"1.0524\"\n" +
+                                "<Cube currency = \"USD\" rate = \"1.0524\"/>\n" +
                                 "<Cube currency = \"CZK\" rate = \"24.671\" />\n" +
                                 "<Cube currency = \"DKK\" rate = \"7.4391\" />\n" +
                                 "</Cube>";
