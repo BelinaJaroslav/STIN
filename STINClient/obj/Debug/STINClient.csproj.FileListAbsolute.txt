@@ -7,3 +7,16 @@ C:\Users\Jaroslav\source\repos\STINProject\STINClient\obj\Debug\STINClient.cspro
 C:\Users\Jaroslav\source\repos\STINProject\STINClient\obj\Debug\STINClient.csproj.CoreCompileInputs.cache
 C:\Users\Jaroslav\source\repos\STINProject\STINClient\obj\Debug\STINClient.exe
 C:\Users\Jaroslav\source\repos\STINProject\STINClient\obj\Debug\STINClient.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Debug\STINClient.exe.config
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Debug\STINClient.exe
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Debug\STINClient.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Debug\STINInterfaces.dll
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Debug\STINInterfaces.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.csprojAssemblyReference.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.Form1.resources
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.Properties.Resources.resources
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.csproj.GenerateResource.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.csproj.CoreCompileInputs.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.csproj.CopyComplete
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.exe
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Debug\STINClient.pdb

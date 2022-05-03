@@ -16,23 +16,19 @@ namespace STINServer
     {
         public HtmlDocument GetCurrentRate()
         {
+            return GetCurrentRateStatic();
+        }
+        
+
+        public static HtmlDocument GetCurrentRateStatic()
+        {
             string answer;
             string URLString = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
             string rate = "unresolved";
             try
             {
                 XmlReader reader = new XmlTextReader(URLString);
-                while (reader.Read())
-                {
-                    if (reader.HasAttributes)
-                    {
-                        if (reader[0] == "CZK")
-                        {
-                            rate = reader[1];
-                        }
-                        reader.MoveToElement();
-                    }
-                }
+                rate = ExtractRate(reader);
             }
             catch (System.Net.WebException e)
             {
@@ -63,6 +59,22 @@ namespace STINServer
                 as RemoteEndpointMessageProperty;
             answer = endpointProperty.Address;
             return Wrapper.Wrap(answer);
+        }
+
+        public static string ExtractRate(XmlReader reader)
+        {
+            while (reader.Read())
+            {
+                if (reader.HasAttributes)
+                {
+                    if (reader[0] == "CZK")
+                    {
+                        return reader[1];
+                    }
+                    reader.MoveToElement();
+                }
+            }
+            return "0";
         }
     }
 }
