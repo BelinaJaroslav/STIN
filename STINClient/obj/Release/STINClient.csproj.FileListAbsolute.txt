@@ -1,0 +1,13 @@
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Release\STINClient.exe.config
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Release\STINClient.exe
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Release\STINClient.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Release\STINInterfaces.dll
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\bin\Release\STINInterfaces.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.csproj.AssemblyReference.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.Form1.resources
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.Properties.Resources.resources
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.csproj.GenerateResource.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.csproj.CoreCompileInputs.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.csproj.CopyComplete
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.exe
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINClient\obj\Release\STINClient.pdb
