@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
@@ -52,7 +53,16 @@ namespace STINServer
 
         public HtmlDocument GetUserID()
         {
-            throw new NotImplementedException();
+            string answer;
+            OperationContext context = OperationContext.Current;
+
+            MessageProperties messageProperties = context.IncomingMessageProperties;
+
+            RemoteEndpointMessageProperty endpointProperty =
+                messageProperties[RemoteEndpointMessageProperty.Name]
+                as RemoteEndpointMessageProperty;
+            answer = endpointProperty.Address;
+            return Wrapper.Wrap(answer);
         }
     }
 }
