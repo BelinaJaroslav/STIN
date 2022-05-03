@@ -11,7 +11,7 @@ namespace XUnitTestProject1
         [Fact]
         public void Test1()
         {
-            string testString = "<? xml version = \"1.0\" encoding = \"UTF-8\" ?>\n" +
+            string testString = "<?xml version = \"1.0\" encoding = \"UTF-8\" ?>\n" +
                                 "<Cube time=\"2022 - 05 - 02\">\n" +
                                 "<Cube currency = \"USD\" rate = \"1.0524\"\n" +
                                 "<Cube currency = \"CZK\" rate = \"24.671\" />\n" +
