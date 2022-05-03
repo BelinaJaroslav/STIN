@@ -33,4 +33,4 @@ jobs:
           msbuild.exe STINProject.sln /p:platform="Any CPU" /p:configuration="Release"
         
       - name: Run Tests
-        run: vstest.console.exe .\XUnitTestProject1\bin\Release\XUnitTestProject1.dll
+        run: vstest.console.exe .\XUnitTestProject1\bin\Release\net48\XUnitTestProject1.dll
