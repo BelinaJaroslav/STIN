@@ -15,12 +15,7 @@ namespace STINClient
         /// </summary>
         [STAThread]
         static void Main()
-        {
-            ChannelFactory<IWCFService> channelFactory = 
-                new ChannelFactory<IWCFService>("STINServiceEndpoint");
-            IWCFService server = channelFactory.CreateChannel();
-
-
+        { 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

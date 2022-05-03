@@ -1,0 +1,102 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj",
+        "projectName": "STINInterfaces",
+        "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj"
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj",
+        "projectName": "STINServer",
+        "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {
+              "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj": {
+                "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
+        "projectName": "XUnitTestProject1",
+        "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
+        "packagesPath": "C:\\Users\\Jaroslav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\XUnitTestProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jaroslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net4.5",
+            "projectReferences": {
+              "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj": {
+                "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINServer\\STINServer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net4.5",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

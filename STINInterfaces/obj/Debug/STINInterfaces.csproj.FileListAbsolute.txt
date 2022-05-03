@@ -4,3 +4,9 @@ C:\Users\Jaroslav\source\repos\STINProject\STINInterfaces\obj\Debug\STINInterfac
 C:\Users\Jaroslav\source\repos\STINProject\STINInterfaces\obj\Debug\STINInterfaces.csproj.CoreCompileInputs.cache
 C:\Users\Jaroslav\source\repos\STINProject\STINInterfaces\obj\Debug\STINInterfaces.dll
 C:\Users\Jaroslav\source\repos\STINProject\STINInterfaces\obj\Debug\STINInterfaces.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\bin\Debug\STINInterfaces.dll
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\bin\Debug\STINInterfaces.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\obj\Debug\STINInterfaces.csprojAssemblyReference.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\obj\Debug\STINInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\obj\Debug\STINInterfaces.dll
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\obj\Debug\STINInterfaces.pdb
