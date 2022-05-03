@@ -8,7 +8,12 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj",
         "projectName": "STINInterfaces",
-        "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj"
+        "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\BelinaJaroslav\\STIN\\STINInterfaces\\STINInterfaces.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net45": {}

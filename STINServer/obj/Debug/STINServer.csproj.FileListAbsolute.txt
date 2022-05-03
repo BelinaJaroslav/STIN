@@ -13,8 +13,8 @@ C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Debug\STINServ
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Debug\STINServer.pdb
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Debug\STINInterfaces.dll
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Debug\STINInterfaces.pdb
-C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Debug\STINServer.csprojAssemblyReference.cache
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Debug\STINServer.csproj.CoreCompileInputs.cache
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Debug\STINServer.csproj.CopyComplete
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Debug\STINServer.exe
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Debug\STINServer.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Debug\STINServer.csproj.AssemblyReference.cache

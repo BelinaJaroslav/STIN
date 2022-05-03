@@ -1,0 +1,10 @@
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Release\STINServer.exe.config
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Release\STINServer.exe
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Release\STINServer.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Release\STINInterfaces.dll
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\bin\Release\STINInterfaces.pdb
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Release\STINServer.csproj.AssemblyReference.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Release\STINServer.csproj.CoreCompileInputs.cache
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Release\STINServer.csproj.CopyComplete
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Release\STINServer.exe
+C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINServer\obj\Release\STINServer.pdb
