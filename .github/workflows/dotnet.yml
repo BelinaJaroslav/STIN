@@ -38,4 +38,6 @@ jobs:
         
       - name: Coverlet coverage test
         uses: b3b00/coverlet-action@1.2.2
+        with:
+          output: 'lcov.info'
 
