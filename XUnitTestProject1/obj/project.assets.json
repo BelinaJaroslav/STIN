@@ -467,11 +467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaroslav\\Source\\Repos\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
       "projectName": "XUnitTestProject1",
-      "projectPath": "C:\\Users\\Jaroslav\\Source\\Repos\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
+      "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
       "packagesPath": "C:\\Users\\Jaroslav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaroslav\\Source\\Repos\\STIN\\XUnitTestProject1\\obj\\",
+      "outputPath": "C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jaroslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -488,8 +488,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "C:\\Users\\Jaroslav\\Source\\Repos\\STIN\\STINServer\\STINServer.csproj": {
-              "projectPath": "C:\\Users\\Jaroslav\\Source\\Repos\\STIN\\STINServer\\STINServer.csproj"
+            "C:\\Users\\Jaroslav\\source\\repos\\STIN\\STINServer\\STINServer.csproj": {
+              "projectPath": "C:\\Users\\Jaroslav\\source\\repos\\STIN\\STINServer\\STINServer.csproj"
             }
           }
         }

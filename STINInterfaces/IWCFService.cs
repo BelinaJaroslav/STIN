@@ -16,7 +16,7 @@ namespace STINInterfaces
         string GetUserID();
 
         [OperationContract]
-        string GetCurrentTime(TimeZone timeZone);
+        string GetCurrentTime(TimeSpan offset);
 
         [OperationContract]
         string GetCurrentRate();
