@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DUCSl5+8EzVFLqUv2dJ2q4udU5k+snGLFn1xnSVnUm4x3uTJLdtJL+wJGjn1Wdyr+fpXLFLEL5ok+HYGya986g==",
+  "dgSpecHash": "8iINpVnGThv3PPDR+rSoryJ97KkHiJckVnwZWCNBPf9s/NXDVRSAxkmiKaXkkpoSJFx9lDzBXgYjmh8kzZ8xdA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jaroslav\\Source\\Repos\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jaroslav\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
+    "C:\\Users\\Jaroslav\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Jaroslav\\.nuget\\packages\\coverlet.msbuild\\3.1.2\\coverlet.msbuild.3.1.2.nupkg.sha512",
     "C:\\Users\\Jaroslav\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
     "C:\\Users\\Jaroslav\\.nuget\\packages\\microsoft.net.test.sdk\\16.7.1\\microsoft.net.test.sdk.16.7.1.nupkg.sha512",
