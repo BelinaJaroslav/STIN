@@ -17,10 +17,10 @@ C:\Users\Jaroslav\Source\Repos\STIN\STINClient\bin\Release\STINClient.pdb
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\bin\Release\STINInterfaces.dll
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\bin\Release\STINInterfaces.pdb
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.csproj.AssemblyReference.cache
-C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.Form1.resources
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.Properties.Resources.resources
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.csproj.GenerateResource.cache
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.csproj.CoreCompileInputs.cache
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.csproj.CopyComplete
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.exe
 C:\Users\Jaroslav\Source\Repos\STIN\STINClient\obj\Release\STINClient.pdb
+C:\Users\Jaroslav\source\repos\STIN\STINClient\obj\Release\STINClient.STIN_aplikace.resources

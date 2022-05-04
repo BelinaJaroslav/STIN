@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace STINClient
 {
-    public partial class Form1 : Form
+    public partial class STIN_aplikace : Form
     {
         IWCFService server;
-        public Form1()
+        public STIN_aplikace()
         {
             InitializeComponent();
         }
@@ -26,6 +26,7 @@ namespace STINClient
             ChannelFactory<IWCFService> channelFactory =
                 new ChannelFactory<IWCFService>("STINServiceEndpoint");
             server = channelFactory.CreateChannel();
+            webBrowser1.DocumentText = Wrapper.Wrap("Vítejte v programu");
         }
 
         private void button1_Click(object sender, EventArgs e)
