@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8iINpVnGThv3PPDR+rSoryJ97KkHiJckVnwZWCNBPf9s/NXDVRSAxkmiKaXkkpoSJFx9lDzBXgYjmh8kzZ8xdA==",
+  "dgSpecHash": "ww4KIUU0zgxeqv0RxgUwaj6uOSMUlCquECHZJVcMPTx9//JDfEcpdPW0DZSo+9TdyQu1Okxk5pckO/KRU5uoZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jaroslav\\Source\\Repos\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
+  "projectFilePath": "C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\XUnitTestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jaroslav\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Jaroslav\\.nuget\\packages\\coverlet.msbuild\\3.1.2\\coverlet.msbuild.3.1.2.nupkg.sha512",

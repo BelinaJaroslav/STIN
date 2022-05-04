@@ -15,7 +15,7 @@ namespace STINServer
             {
                 host.Open();
                 Console.WriteLine("server is open");
-                Console.WriteLine("Press enter to quit");
+                Console.WriteLine("<Press enter to close server>");
                 Console.ReadLine();
             }
         }

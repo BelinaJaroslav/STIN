@@ -6,7 +6,6 @@ C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\obj\Release\ST
 C:\Users\Jaroslav\source\repos\BelinaJaroslav\STIN\STINInterfaces\obj\Release\STINInterfaces.pdb
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\bin\Release\STINInterfaces.dll
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\bin\Release\STINInterfaces.pdb
-C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\obj\Release\STINInterfaces.csproj.AssemblyReference.cache
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\obj\Release\STINInterfaces.csproj.CoreCompileInputs.cache
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\obj\Release\STINInterfaces.dll
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\obj\Release\STINInterfaces.pdb

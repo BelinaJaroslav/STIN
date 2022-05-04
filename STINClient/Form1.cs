@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -30,16 +31,69 @@ namespace STINClient
         private void button1_Click(object sender, EventArgs e)
         {
 
-            webBrowser1.DocumentText = server.GetUserID();
+            webBrowser1.DocumentText = Wrapper.Wrap("Čekám na odpověd serveru");
+            new Thread(() =>
+            {
+                try
+                {
+                    webBrowser1.DocumentText = server.GetUserID();
+                }
+                catch (EndpointNotFoundException)
+                {
+                    webBrowser1.DocumentText = Wrapper.Wrap("Chyba při připojení k serveru");
+                }
+                catch (CommunicationException)
+                {
+                    webBrowser1.DocumentText = Wrapper.Wrap("Chyba při přijmu odpovědi/ztráta spojení");
+                }
+            }).Start();
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            server.GetCurrentTime(TimeZone.CurrentTimeZone);
+            webBrowser1.DocumentText = Wrapper.Wrap("Čekám na odpověd serveru");
+            new Thread(() =>
+            {
+                try
+                {
+                    webBrowser1.DocumentText = server.GetCurrentRate();
+                }
+                catch (EndpointNotFoundException)
+                {
+                    webBrowser1.DocumentText = Wrapper.Wrap("Chyba při připojení k serveru");
+                }
+                catch (CommunicationException)
+                {
+                    webBrowser1.DocumentText = Wrapper.Wrap("Chyba při přijmu odpovědi/ztráta spojení");
+                }
+            }).Start();
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            TimeZone curTimeZone = TimeZone.CurrentTimeZone;
+            TimeSpan offset = curTimeZone.GetUtcOffset(DateTime.Now);
+
+            webBrowser1.DocumentText = Wrapper.Wrap("Čekám na odpověd serveru");
+            new Thread(() =>
+            {
+                try
+                {
+                    webBrowser1.DocumentText = server.GetCurrentTime(offset);
+                }
+                catch (EndpointNotFoundException)
+                {
+                    webBrowser1.DocumentText = Wrapper.Wrap("Chyba při připojení k serveru");
+                }
+                catch (CommunicationException)
+                {
+                    webBrowser1.DocumentText = Wrapper.Wrap("Chyba při přijmu odpovědi/ztráta spojení");
+                }
+            }).Start();
         }
     }
 }

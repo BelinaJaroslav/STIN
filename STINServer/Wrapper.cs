@@ -18,24 +18,11 @@ namespace STINServer
             new XElement("html",
                 new XElement("head"),
                 new XElement("body",
-                    new XElement("p",
-                        "This paragraph contains ", new XElement("b", "bold"), " text."
-                    ),
-                    new XElement("p",
-                        "This paragraph has just plain text."
-                        )
+                    new XElement("p", val)
                     )
                 )
             );
             return xDocument.ToString();
         }
-
-
-        public static string Wrap(Exception val)
-        {
-            throw new NotImplementedException();
-        }
-
-
     }
 }
