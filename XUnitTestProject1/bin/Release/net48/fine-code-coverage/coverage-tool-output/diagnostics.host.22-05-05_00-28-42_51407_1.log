@@ -1,0 +1,841 @@
+TpTrace Verbose: 0 : 19000, 1, 2022/05/05, 00:28:42.707, 1939804606999, testhost.net48.x86.exe, Version: 16.11.0
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.713, 1939804640319, testhost.net48.x86.exe, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 61009],[--endpoint, 127.0.0.1:061009],[--role, client],[--parentprocessid, 16456],[--diag, C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\coverage-tool-output\diagnostics.host.22-05-05_00-28-42_51407_1.log],[--tracelevel, 4],[--datacollectionport, 61008],[--telemetryoptedin, false]
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.713, 1939804645494, testhost.net48.x86.exe, DefaultEngineInvoker: Using Application Configuration: '<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+  <runtime>
+    <legacyUnhandledExceptionPolicy enabled="1" />
+    <legacyCorruptedStateExceptionsPolicy enabled="true" />
+    <!-- To get stacktrace information for portable and embedded pdbs when net472 installed on machine.
+          More details https://github.com/dotnet/designs/blob/master/accepted/diagnostics/debugging-with-symbols-and-sources.md#stack-traces -->
+    <AppContextSwitchOverrides value="Switch.System.Diagnostics.IgnorePortablePDBsInStackTraces=false" />
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <probing privatePath="Extensions" />
+      <!-- Test adapters compiled against version 11-14, need to be redirected to version 15. -->
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.TestPlatform.ObjectModel" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="11.0.0.0-14.0.0.0" newVersion="15.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.TestWindow.Interfaces" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="11.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.UnitTestFramework" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.1.0.0" newVersion="10.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Resource" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.ControllerObject" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.ExecutionCommon" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Common" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.diagnostics>
+    <switches>
+      <add name="TpTraceLevel" value="0" />
+    </switches>
+  </system.diagnostics>
+  <appSettings>
+    <!--<add key="ExecutionThreadApartmentState" value ="MTA"/>-->
+    <!--<add key="TraceLogMaxFileSizeInKb" value ="10240"/>-->
+    <!-- MsTest Adapter Specific AppSettings -->
+    <!-- This flag is added to support test execution for net35 tests through TMI adapter. -->
+    <add key="TestProjectRetargetTo35Allowed" value="true" />
+  </appSettings>
+</configuration>'
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.714, 1939804651875, testhost.net48.x86.exe, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '16456'
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.727, 1939804784167, testhost.net48.x86.exe, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:061009'
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.733, 1939804843438, testhost.net48.x86.exe, SocketClient.Start: connecting to server endpoint: 127.0.0.1:061009
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.736, 1939804872483, testhost.net48.x86.exe, DefaultEngineInvoker.ConnectToDatacollector: Connecting to datacollector, port: 61008
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:42.738, 1939804891655, testhost.net48.x86.exe, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:061009
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.738, 1939804896168, testhost.net48.x86.exe, Trying to connect to server on socket : 127.0.0.1:61008 
+TpTrace Verbose: 0 : 19000, 1, 2022/05/05, 00:28:42.739, 1939804900703, testhost.net48.x86.exe, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.741, 1939804920105, testhost.net48.x86.exe, Connected to server, and starting MessageLoopAsync
+TpTrace Information: 0 : 19000, 8, 2022/05/05, 00:28:42.744, 1939804947813, testhost.net48.x86.exe, Connected to the server successfully 
+TpTrace Information: 0 : 19000, 8, 2022/05/05, 00:28:42.744, 1939804949542, testhost.net48.x86.exe, Using the buffer size of 16384 bytes
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.744, 1939804952711, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.744, 1939804954194, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:42.745, 1939804957892, testhost.net48.x86.exe, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Information: 0 : 19000, 11, 2022/05/05, 00:28:42.748, 1939804989966, testhost.net48.x86.exe, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:42.880, 1939806309715, testhost.net48.x86.exe, TestRequestHandler.OnMessageReceived: received message: (ProtocolVersion) -> 5
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.924, 1939806753859, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Logging TestHost Diagnostics in file: C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\coverage-tool-output\\diagnostics.host.22-05-05_00-28-42_51407_1.log"}}
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.924, 1939806756503, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.926, 1939806767859, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:42.931, 1939806821572, testhost.net48.x86.exe, TestRequestHandler.OnMessageReceived: received message: (TestExecution.Initialize) -> [
+  "C:\\Program Files\\dotnet\\sdk\\5.0.407\\Extensions\\Microsoft.Diagnostics.NETCore.Client.dll",
+  "C:\\Program Files\\dotnet\\sdk\\5.0.407\\Extensions\\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll",
+  "C:\\Program Files\\dotnet\\sdk\\5.0.407\\Extensions\\Microsoft.TestPlatform.Extensions.EventLogCollector.dll",
+  "C:\\Program Files\\dotnet\\sdk\\5.0.407\\Extensions\\Microsoft.TestPlatform.TestHostRuntimeProvider.dll",
+  "C:\\Program Files\\dotnet\\sdk\\5.0.407\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll",
+  "C:\\Program Files\\dotnet\\sdk\\5.0.407\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll",
+  "C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\build-output\\xunit.runner.visualstudio.testadapter.dll"
+]
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.942, 1939806935748, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.943, 1939806939060, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.943, 1939806941962, testhost.net48.x86.exe, TestRequestHandler.OnMessageReceived: Running job 'TestExecution.Initialize'.
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:42.947, 1939806981455, testhost.net48.x86.exe, TestRequestHandler.OnMessageReceived: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\build-output\\XUnitTestProject1.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <ResultsDirectory>C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n    <TargetPlatform>X86</TargetPlatform>\r\n    <TargetFrameworkVersion>.NETFramework,Version=v4.8</TargetFrameworkVersion>\r\n    <DesignMode>False</DesignMode>\r\n    <CollectSourceInformation>False</CollectSourceInformation>\r\n  </RunConfiguration>\r\n  <LoggerRunSettings>\r\n    <Loggers>\r\n      <Logger friendlyName=\"blame\" enabled=\"True\" />\r\n      <Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\5.0.407\\vstest.console.dll\" enabled=\"True\" />\r\n    </Loggers>\r\n  </LoggerRunSettings>\r\n  <DataCollectionRunSettings>\r\n    <DataCollectors>\r\n      <DataCollector friendlyName=\"blame\" enabled=\"True\">\r\n        <Configuration>\r\n          <ResultsDirectory>C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n        </Configuration>\r\n      </DataCollector>\r\n    </DataCollectors>\r\n  </DataCollectionRunSettings>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.952, 1939807030327, testhost.net48.x86.exe, TestExecutorService: Loading the extensions
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.954, 1939807055295, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.956, 1939807073001, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.956, 1939807074633, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.956, 1939807075517, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.958, 1939807089290, testhost.net48.x86.exe, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.958, 1939807093792, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.958, 1939807094990, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.958, 1939807095866, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.958, 1939807096700, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.959, 1939807097631, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.959, 1939807106926, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.960, 1939807108418, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.960, 1939807109387, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.960, 1939807110184, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.960, 1939807111079, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.960, 1939807111849, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.960, 1939807112691, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.965, 1939807159792, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.965, 1939807161176, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.966, 1939807174510, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'.
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:42.973, 1939807237478, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.986, 1939807375467, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Failed to load assembly. Reason:System.BadImageFormatException: Nelze načíst soubor nebo sestavení Microsoft.Diagnostics.NETCore.Client, Version=0.2.2.41902, Culture=neutral, PublicKeyToken=31bf3856ad364e35 nebo jeden z jejich závislých prvků. Byl učiněn pokus načíst program v nesprávném formátu.
+File name: 'Microsoft.Diagnostics.NETCore.Client, Version=0.2.2.41902, Culture=neutral, PublicKeyToken=31bf3856ad364e35'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807377760, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807378636, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807379792, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.Diagnostics.NETCore.Client.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807381002, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.Diagnostics.NETCore.Client.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807381727, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807382838, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.Diagnostics.NETCore.Client.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807383895, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.Diagnostics.NETCore.Client.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.987, 1939807384659, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Failed to load assembly.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.988, 1939807390122, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Diagnostics.NETCore.Client'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.988, 1939807392273, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.988, 1939807393149, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Resolved from cache.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.988, 1939807393953, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Diagnostics.NETCore.Client'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.988, 1939807394629, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Diagnostics.NETCore.Client'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.988, 1939807396299, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Diagnostics.NETCore.Client'.
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:42.990, 1939807410481, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.Diagnostics.NETCore.Client nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.Diagnostics.NETCore.Client' ---> System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.Diagnostics.NETCore.Client nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.Diagnostics.NETCore.Client'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.991, 1939807421352, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.991, 1939807423116, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.992, 1939807432336, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.994, 1939807456900, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Failed to load assembly. Reason:System.BadImageFormatException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a nebo jeden z jejich závislých prvků. Byl učiněn pokus načíst program v nesprávném formátu.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807459107, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807459967, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807461235, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807462482, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.TestPlatform.Extensions.BlameDataCollector.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807463246, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807464426, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807466186, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.TestPlatform.Extensions.BlameDataCollector.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.995, 1939807466993, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Failed to load assembly.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.996, 1939807467855, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.996, 1939807469916, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.996, 1939807470667, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolved from cache.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.996, 1939807471503, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.996, 1939807472215, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:42.996, 1939807473722, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:42.996, 1939807477169, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.Extensions.BlameDataCollector nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector' ---> System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.Extensions.BlameDataCollector nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.997, 1939807485928, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.997, 1939807487072, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:42.998, 1939807492772, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.000, 1939807509324, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.EventLogCollector, from path: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.005, 1939807564033, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.005, 1939807566175, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.006, 1939807576547, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.011, 1939807626461, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Failed to load assembly. Reason:System.BadImageFormatException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a nebo jeden z jejich závislých prvků. Byl učiněn pokus načíst program v nesprávném formátu.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.012, 1939807632590, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.012, 1939807634123, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.012, 1939807636307, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.TestPlatform.TestHostRuntimeProvider.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.013, 1939807638526, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.TestPlatform.TestHostRuntimeProvider.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.013, 1939807639867, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.013, 1939807641878, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.TestPlatform.TestHostRuntimeProvider.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.013, 1939807643748, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.TestPlatform.TestHostRuntimeProvider.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.013, 1939807645126, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Failed to load assembly.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.013, 1939807646560, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.014, 1939807649937, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.014, 1939807651415, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolved from cache.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.014, 1939807652629, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.014, 1939807653649, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.014, 1939807655684, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.015, 1939807660562, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.TestHostRuntimeProvider nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider' ---> System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.TestHostRuntimeProvider nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.016, 1939807672617, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.016, 1939807674155, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.019, 1939807704045, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.023, 1939807741698, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Failed to load assembly. Reason:System.BadImageFormatException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a nebo jeden z jejich závislých prvků. Byl učiněn pokus načíst program v nesprávném formátu.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.023, 1939807744420, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.023, 1939807745375, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.023, 1939807746888, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.024, 1939807748936, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.024, 1939807750289, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.024, 1939807751919, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.024, 1939807753665, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.024, 1939807754541, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Failed to load assembly.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.024, 1939807755556, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.025, 1939807758137, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.025, 1939807759026, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Resolved from cache.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.025, 1939807759994, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.025, 1939807760775, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.025, 1939807762735, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'.
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.025, 1939807766567, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger' ---> System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.027, 1939807778553, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.027, 1939807780393, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.028, 1939807795231, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.031, 1939807825813, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Failed to load assembly. Reason:System.BadImageFormatException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a nebo jeden z jejich závislých prvků. Byl učiněn pokus načíst program v nesprávném formátu.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.032, 1939807828779, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.032, 1939807829806, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.032, 1939807831235, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.032, 1939807832598, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Assembly path does not exist: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.032, 1939807833440, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.032, 1939807834757, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.032, 1939807836145, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\TestHost\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.033, 1939807840667, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Failed to load assembly.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.033, 1939807842795, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.033, 1939807845841, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.034, 1939807847530, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolved from cache.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.034, 1939807848599, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.034, 1939807849404, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.034, 1939807851347, testhost.net48.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.037, 1939807879006, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger' ---> System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.038, 1939807895924, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.039, 1939807897463, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.039, 1939807898924, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.runner.visualstudio.testadapter.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.039, 1939807900222, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.runner.visualstudio.testadapter.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.039, 1939807901092, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.040, 1939807910502, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter: Loading assembly 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.044, 1939807954793, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: xunit.runner.visualstudio.testadapter, from path: C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.059, 1939808099674, testhost.net48.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.060, 1939808115115, testhost.net48.x86.exe, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.060, 1939808117198, testhost.net48.x86.exe, TestPluginCache: Executors are 'executor://xunit/VsTestRunner2/net'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.061, 1939808118059, testhost.net48.x86.exe, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.061, 1939808118799, testhost.net48.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.061, 1939808120143, testhost.net48.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.065, 1939808159179, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation2 TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor2
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.065, 1939808163716, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.065, 1939808164851, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.065, 1939808165688, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808168102, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808169030, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808169781, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808170528, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808171321, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808172085, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808173235, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808174173, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808175020, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808175977, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.066, 1939808176779, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.067, 1939808177623, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.067, 1939808178439, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.067, 1939808181636, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.Diagnostics.NETCore.Client nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.Diagnostics.NETCore.Client'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.067, 1939808183864, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.Extensions.BlameDataCollector nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.067, 1939808187142, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.TestHostRuntimeProvider nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.068, 1939808189302, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.068, 1939808191367, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.068, 1939808194304, testhost.net48.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.068, 1939808195197, testhost.net48.x86.exe, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.068, 1939808195920, testhost.net48.x86.exe, TestPluginCache: Executors are 'executor://xunit/VsTestRunner2/net'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.068, 1939808196657, testhost.net48.x86.exe, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.069, 1939808197377, testhost.net48.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.069, 1939808198048, testhost.net48.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.080, 1939808312883, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.080, 1939808314645, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.080, 1939808316273, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.runner.visualstudio.testadapter.dll', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.081, 1939808317640, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.runner.visualstudio.testadapter.exe', returning.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.081, 1939808318383, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.081, 1939808325343, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Loading assembly 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.081, 1939808326589, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, from path: C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.082, 1939808333957, testhost.net48.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Xunit.Runner.VisualStudio.VsTestRunner
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.082, 1939808335370, testhost.net48.x86.exe, TestExecutorExtensionManager: Loading executor Xunit.Runner.VisualStudio.VsTestRunner
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.082, 1939808336161, testhost.net48.x86.exe, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808347327, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestSettingsProviderPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ISettingsProvider
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808348518, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808349314, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808350047, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808351828, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808352633, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808353308, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808353971, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808354679, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808355384, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.084, 1939808356386, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808357265, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808358046, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808358806, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808359557, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808360319, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808361079, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808363421, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.Diagnostics.NETCore.Client nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.Diagnostics.NETCore.Client'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.085, 1939808365437, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.Extensions.BlameDataCollector nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.086, 1939808368247, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.TestHostRuntimeProvider nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.086, 1939808370198, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.086, 1939808372095, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.086, 1939808375008, testhost.net48.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.086, 1939808375825, testhost.net48.x86.exe, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.086, 1939808376503, testhost.net48.x86.exe, TestPluginCache: Executors are 'executor://xunit/VsTestRunner2/net'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.086, 1939808377145, testhost.net48.x86.exe, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.087, 1939808377850, testhost.net48.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.087, 1939808378483, testhost.net48.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.088, 1939808387517, testhost.net48.x86.exe, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.088, 1939808388481, testhost.net48.x86.exe, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.088, 1939808394230, testhost.net48.x86.exe, TestRequestHandler.OnMessageReceived: Running job 'TestExecution.StartWithSources'.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.153, 1939809039107, testhost.net48.x86.exe, TestDiscoveryManager: Discovering tests from sources C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\XUnitTestProject1.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.155, 1939809060146, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestDiscovererPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.155, 1939809061697, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.155, 1939809062661, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.155, 1939809063558, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.155, 1939809065635, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.155, 1939809066594, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809067621, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809068398, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809069132, testhost.net48.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809069840, testhost.net48.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.visualstudio.testadapter.dll
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809070881, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809071702, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809072462, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809073217, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809073969, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809074718, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.407\Extensions,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.156, 1939809075486, testhost.net48.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output,C:\Program Files\dotnet\sdk\5.0.407\TestHost
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.157, 1939809080016, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.Diagnostics.NETCore.Client nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.Diagnostics.NETCore.Client'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.157, 1939809085097, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.Extensions.BlameDataCollector nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.158, 1939809088260, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.TestPlatform.TestHostRuntimeProvider nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.158, 1939809090244, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 19000, 3, 2022/05/05, 00:28:43.158, 1939809092181, testhost.net48.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Nelze načíst soubor nebo sestavení Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger nebo jeden z jejich závislých prvků. Systém nemůže nalézt uvedený soubor.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Protokolování vazeb sestavení je VYPNUTO.
+Chcete-li povolit protokolování chyb vazeb sestavení, nastavte hodnotu registru [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) na hodnotu 1.
+Poznámka: Protokolování chyb vazeb sestavení ovlivňuje výkon systému.
+Chcete-li tuto funkci vypnout, odeberte z registru hodnotu [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.160, 1939809114983, testhost.net48.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.160, 1939809116837, testhost.net48.x86.exe, TestPluginCache: Discoverers are 'Xunit.Runner.VisualStudio.VsTestRunner, xunit.runner.visualstudio.testadapter, Version=2.4.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.161, 1939809117640, testhost.net48.x86.exe, TestPluginCache: Executors are 'executor://xunit/VsTestRunner2/net'.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.161, 1939809118333, testhost.net48.x86.exe, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.161, 1939809118989, testhost.net48.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.161, 1939809119614, testhost.net48.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:43.200, 1939809509908, testhost.net48.x86.exe, PEReaderHelper.GetAssemblyType: Determined assemblyType:'Managed' for source: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\XUnitTestProject1.dll'
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.205, 1939809562043, testhost.net48.x86.exe, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://xunit/VsTestRunner2/net
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:43.206, 1939809567979, testhost.net48.x86.exe, BaseRunTests.TryToRunInSTAThread: Using STA thread to call adapter API.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.214, 1939809655847, testhost.net48.x86.exe, [xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (32-bit Desktop .NET 4.0.30319.42000)
+TpTrace Verbose: 0 : 19000, 13, 2022/05/05, 00:28:43.215, 1939809657664, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (32-bit Desktop .NET 4.0.30319.42000)"}}
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.246, 1939809971169, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.utility.net452, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.246, 1939809972846, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.utility.net452, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.246, 1939809974163, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.utility.net452, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.runner.utility.net452.dll', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.246, 1939809975298, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.utility.net452, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.runner.utility.net452.exe', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.246, 1939809976034, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.utility.net452, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.247, 1939809982450, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.runner.utility.net452, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Loading assembly 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.utility.net452.dll'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.248, 1939809990985, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: xunit.runner.utility.net452, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, from path: C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.runner.utility.net452.dll
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.248, 1939809994262, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.248, 1939809995482, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.248, 1939809996840, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.abstractions.dll', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.249, 1939809998031, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.abstractions.exe', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.249, 1939809998775, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.249, 1939810004166, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Loading assembly 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.abstractions.dll'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.250, 1939810010409, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, from path: C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.abstractions.dll
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.477, 1939812277416, testhost.net48.x86.exe, [xUnit.net 00:00:00.26]   Discovering: XUnitTestProject1
+TpTrace Verbose: 0 : 19000, 13, 2022/05/05, 00:28:43.477, 1939812279701, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.26]   Discovering: XUnitTestProject1"}}
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.561, 1939813120037, testhost.net48.x86.exe, [xUnit.net 00:00:00.35]   Discovered:  XUnitTestProject1
+TpTrace Verbose: 0 : 19000, 13, 2022/05/05, 00:28:43.561, 1939813122079, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.35]   Discovered:  XUnitTestProject1"}}
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.566, 1939813176365, testhost.net48.x86.exe, [xUnit.net 00:00:00.35]   Starting:    XUnitTestProject1
+TpTrace Verbose: 0 : 19000, 13, 2022/05/05, 00:28:43.567, 1939813180167, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.35]   Starting:    XUnitTestProject1"}}
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.571, 1939813224029, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.571, 1939813226006, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.572, 1939813227873, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.execution.desktop.dll', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.572, 1939813229269, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.execution.desktop.exe', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.572, 1939813230147, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.573, 1939813238746, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Loading assembly 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.execution.desktop.dll'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.573, 1939813246669, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, from path: C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.execution.desktop.dll
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.574, 1939813249002, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.574, 1939813250034, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved from cache.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.574, 1939813254616, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.574, 1939813256020, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved from cache.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.575, 1939813260704, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.575, 1939813262208, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.575, 1939813265118, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.core.dll', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.575, 1939813266699, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\5.0.407\Extensions\xunit.core.exe', returning.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.576, 1939813267605, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Searching in: 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.576, 1939813275825, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Loading assembly 'C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.core.dll'.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.577, 1939813285293, testhost.net48.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, from path: C:\Users\Jaroslav\source\repos\STIN\XUnitTestProject1\bin\Release\net48\fine-code-coverage\build-output\xunit.core.dll
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.578, 1939813291574, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:43.578, 1939813292650, testhost.net48.x86.exe, AssemblyResolver.OnResolve: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved from cache.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:43.686, 1939814373850, testhost.net48.x86.exe, TestExecutionRecorder.RecordStart: Starting test: XUnitTestProject1.UnitTest1.Test1.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:43.840, 1939815909456, testhost.net48.x86.exe, TestExecutionRecorder.RecordResult: Received result for test: XUnitTestProject1.UnitTest1.Test1.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:43.859, 1939816105600, testhost.net48.x86.exe, TestExecutionRecorder.RecordEnd: test: XUnitTestProject1.UnitTest1.Test1 execution completed.
+TpTrace Warning: 0 : 19000, 16, 2022/05/05, 00:28:43.860, 1939816107968, testhost.net48.x86.exe, TestRunCache: InProgressTests is null
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:43.860, 1939816115923, testhost.net48.x86.exe, TestExecutionRecorder.RecordStart: Starting test: XUnitTestProject1.UnitTest1.test4.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:43.932, 1939816827286, testhost.net48.x86.exe, TestExecutionRecorder.RecordResult: Received result for test: XUnitTestProject1.UnitTest1.test4.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:43.933, 1939816845765, testhost.net48.x86.exe, TestExecutionRecorder.RecordEnd: test: XUnitTestProject1.UnitTest1.test4 execution completed.
+TpTrace Warning: 0 : 19000, 16, 2022/05/05, 00:28:43.934, 1939816847362, testhost.net48.x86.exe, TestRunCache: InProgressTests is null
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:43.934, 1939816852673, testhost.net48.x86.exe, TestExecutionRecorder.RecordStart: Starting test: XUnitTestProject1.UnitTest1.Test2.
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:43.975, 1939817258172, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Information: 0 : 19000, 9, 2022/05/05, 00:28:44.622, 1939823735504, testhost.net48.x86.exe, Sending test run statistics
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:44.622, 1939823735587, testhost.net48.x86.exe, TestExecutionRecorder.RecordResult: Received result for test: XUnitTestProject1.UnitTest1.Test2.
+TpTrace Verbose: 0 : 19000, 9, 2022/05/05, 00:28:44.657, 1939824084590, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"cf9ec5ca-467d-b5d3-a8d8-2769e0f2a15a","FullyQualifiedName":"XUnitTestProject1.UnitTest1.Test1","DisplayName":"XUnitTestProject1.UnitTest1.Test1","ExecutorUri":"executor://xunit/VsTestRunner2/net","Source":"C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\build-output\\XUnitTestProject1.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"XUnitTestProject1.UnitTest1.Test1","Messages":[],"ComputerName":"DESKTOP-O7O1UOB","Duration":"00:00:00.1150000","StartTime":"2022-05-04T22:28:43.8390746+00:00","EndTime":"2022-05-04T22:28:43.8390746+00:00","Properties":[]},{"TestCase":{"Id":"540cf123-251c-99dd-d806-d83e5c21de5a","FullyQualifiedName":"XUnitTestProject1.UnitTest1.test4","DisplayName":"XUnitTestProject1.UnitTest1.test4","ExecutorUri":"executor://xunit/VsTestRunner2/net","Source":"C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\build-output\\XUnitTestProject1.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"XUnitTestProject1.UnitTest1.test4","Messages":[],"ComputerName":"DESKTOP-O7O1UOB","Duration":"00:00:00.0940000","StartTime":"2022-05-04T22:28:43.9311022+00:00","EndTime":"2022-05-04T22:28:43.9311022+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Passed":2}},"ActiveTests":[{"Id":"e04cba65-2c4f-eaa1-a31a-e742b4713197","FullyQualifiedName":"XUnitTestProject1.UnitTest1.Test2","DisplayName":"XUnitTestProject1.UnitTest1.Test2","ExecutorUri":"executor://xunit/VsTestRunner2/net","Source":"C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\build-output\\XUnitTestProject1.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]}]}}
+TpTrace Verbose: 0 : 19000, 9, 2022/05/05, 00:28:44.658, 1939824095397, testhost.net48.x86.exe, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Warning: 0 : 19000, 16, 2022/05/05, 00:28:44.658, 1939824097527, testhost.net48.x86.exe, TestRunCache: InProgressTests is null
+TpTrace Warning: 0 : 19000, 16, 2022/05/05, 00:28:44.658, 1939824098822, testhost.net48.x86.exe, TestRunCache: No test found corresponding to testResult 'XUnitTestProject1.UnitTest1.Test2' in inProgress list.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:44.659, 1939824108438, testhost.net48.x86.exe, TestExecutionRecorder.RecordEnd: test: XUnitTestProject1.UnitTest1.Test2 execution completed.
+TpTrace Warning: 0 : 19000, 16, 2022/05/05, 00:28:44.659, 1939824110314, testhost.net48.x86.exe, TestRunCache: InProgressTests is null
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:44.660, 1939824117407, testhost.net48.x86.exe, TestExecutionRecorder.RecordStart: Starting test: XUnitTestProject1.UnitTest1.test3.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:44.663, 1939824147612, testhost.net48.x86.exe, TestExecutionRecorder.RecordResult: Received result for test: XUnitTestProject1.UnitTest1.test3.
+TpTrace Verbose: 0 : 19000, 16, 2022/05/05, 00:28:44.665, 1939824164600, testhost.net48.x86.exe, TestExecutionRecorder.RecordEnd: test: XUnitTestProject1.UnitTest1.test3 execution completed.
+TpTrace Warning: 0 : 19000, 16, 2022/05/05, 00:28:44.665, 1939824166358, testhost.net48.x86.exe, TestRunCache: InProgressTests is null
+TpTrace Information: 0 : 19000, 13, 2022/05/05, 00:28:44.667, 1939824193074, testhost.net48.x86.exe, [xUnit.net 00:00:01.45]   Finished:    XUnitTestProject1
+TpTrace Verbose: 0 : 19000, 13, 2022/05/05, 00:28:44.668, 1939824195197, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.45]   Finished:    XUnitTestProject1"}}
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:44.711, 1939824630255, testhost.net48.x86.exe, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://xunit/VsTestRunner2/net
+TpTrace Information: 0 : 19000, 3, 2022/05/05, 00:28:44.716, 1939824674646, testhost.net48.x86.exe, Sending test run complete
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:44.725, 1939824771316, testhost.net48.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":4,"Stats":{"Passed":4}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:01.5111293","Metrics":{}},"LastRunTests":{"NewTestResults":[{"TestCase":{"Id":"e04cba65-2c4f-eaa1-a31a-e742b4713197","FullyQualifiedName":"XUnitTestProject1.UnitTest1.Test2","DisplayName":"XUnitTestProject1.UnitTest1.Test2","ExecutorUri":"executor://xunit/VsTestRunner2/net","Source":"C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\build-output\\XUnitTestProject1.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"XUnitTestProject1.UnitTest1.Test2","Messages":[],"ComputerName":"DESKTOP-O7O1UOB","Duration":"00:00:00.6900000","StartTime":"2022-05-04T22:28:44.6227537+00:00","EndTime":"2022-05-04T22:28:44.6227537+00:00","Properties":[]},{"TestCase":{"Id":"513b2ae7-033c-420e-357c-5c9bb13e8ae1","FullyQualifiedName":"XUnitTestProject1.UnitTest1.test3","DisplayName":"XUnitTestProject1.UnitTest1.test3","ExecutorUri":"executor://xunit/VsTestRunner2/net","Source":"C:\\Users\\Jaroslav\\source\\repos\\STIN\\XUnitTestProject1\\bin\\Release\\net48\\fine-code-coverage\\build-output\\XUnitTestProject1.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"XUnitTestProject1.UnitTest1.test3","Messages":[],"ComputerName":"DESKTOP-O7O1UOB","Duration":"00:00:00.0050000","StartTime":"2022-05-04T22:28:44.663756+00:00","EndTime":"2022-05-04T22:28:44.663756+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":4,"Stats":{"Passed":4}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://xunit/VsTestRunner2/net"]}}
+TpTrace Verbose: 0 : 19000, 3, 2022/05/05, 00:28:44.726, 1939824775568, testhost.net48.x86.exe, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:44.726, 1939824779997, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:44.726, 1939824781884, testhost.net48.x86.exe, TestRequestHandler.OnMessageReceived: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:44.726, 1939824782659, testhost.net48.x86.exe, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:44.727, 1939824786466, testhost.net48.x86.exe, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:061009
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:44.727, 1939824787615, testhost.net48.x86.exe, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:44.727, 1939824789284, testhost.net48.x86.exe, Closing the connection !
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:44.727, 1939824789320, testhost.net48.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:44.727, 1939824791208, testhost.net48.x86.exe, Closing the connection !
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:44.727, 1939824790484, testhost.net48.x86.exe, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:061009
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:44.728, 1939824794405, testhost.net48.x86.exe, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Information: 0 : 19000, 7, 2022/05/05, 00:28:44.728, 1939824794740, testhost.net48.x86.exe, SocketClient.PrivateStop: Stop communication from server endpoint: 127.0.0.1:061009, error:
+TpTrace Verbose: 0 : 19000, 1, 2022/05/05, 00:28:44.728, 1939824795104, testhost.net48.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:44.728, 1939824797107, testhost.net48.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 19000, 7, 2022/05/05, 00:28:44.728, 1939824797954, testhost.net48.x86.exe, TcpClientExtensions.MessageLoopAsync: exiting MessageLoopAsync remoteEndPoint: 127.0.0.1:61009 localEndPoint: 127.0.0.1:61010
+TpTrace Information: 0 : 19000, 1, 2022/05/05, 00:28:44.728, 1939824797461, testhost.net48.x86.exe, Testhost process exiting.

@@ -52,12 +52,12 @@ namespace STINServer
             if (time == default(DateTime))
             {
                 time = DateTime.Now;
+                time = TimeZone.CurrentTimeZone.ToUniversalTime(time);
             }
             Console.WriteLine("GetCurrentTime Called");
             string answer;
-            var val = TimeZone.CurrentTimeZone.ToUniversalTime(time);
             int hours = offset.Hours;
-            val = val.AddHours(hours);
+            var val = time.AddHours(hours);
             answer = string.Format("Aktuální čas serveru je: {0}", val.ToString("HH:mm:ss"));
             return Wrapper.Wrap(answer);
         }

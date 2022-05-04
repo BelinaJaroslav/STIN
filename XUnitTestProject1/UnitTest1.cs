@@ -37,9 +37,9 @@ namespace XUnitTestProject1
         {
             DateTime time = DateTime.Parse("12:00:00");
             TimeSpan offset = TimeSpan.FromHours(2.0);
-            Assert.Matches(".*Aktuální èas serveru je: 12:00:00.*", WCFService.GetCurrentTimeStatic(offset, time));
-            Assert.DoesNotMatch(".*Aktuální èas serveru je: 12:50:00.*", WCFService.GetCurrentTimeStatic(offset, time));
-            Assert.Matches(".*Aktuální èas serveru je: [0-9]+:[0-9]+:[0-9]+.*", WCFService.GetCurrentTimeStatic(offset));
+            Assert.Matches(".*14:00:00.*", WCFService.GetCurrentTimeStatic(offset, time));
+            Assert.DoesNotMatch(".*12:50:00.*", WCFService.GetCurrentTimeStatic(offset, time));
+            Assert.Matches(".*[0-9]+:[0-9]+:[0-9]+.*", WCFService.GetCurrentTimeStatic(offset));
         }
 
         [Fact]

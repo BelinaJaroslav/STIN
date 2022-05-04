@@ -9,3 +9,4 @@ C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\bin\Release\STINInterfaces.pd
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\obj\Release\STINInterfaces.csproj.CoreCompileInputs.cache
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\obj\Release\STINInterfaces.dll
 C:\Users\Jaroslav\Source\Repos\STIN\STINInterfaces\obj\Release\STINInterfaces.pdb
+C:\Users\Jaroslav\source\repos\STIN\STINInterfaces\obj\Release\STINInterfaces.csproj.AssemblyReference.cache
