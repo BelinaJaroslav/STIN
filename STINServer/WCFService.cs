@@ -17,15 +17,16 @@ namespace STINServer
     {
         public string GetCurrentRate()
         {
-            return GetCurrentRateStatic();
+            string URLString = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
+            return GetCurrentRateStatic(URLString);
         }
-        
 
-        public static string GetCurrentRateStatic()
+
+        public static string GetCurrentRateStatic(string URLString)
         {
             Console.WriteLine("GetCurrentRate Called");
             string answer;
-            string URLString = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
+
             string rate = "unresolved";
             try
             {
@@ -41,11 +42,20 @@ namespace STINServer
             return Wrapper.Wrap(answer);
         }
 
-        public string GetCurrentTime(TimeSpan offset)
+        public string GetCurrentTime(TimeSpan offset, DateTime time = default(DateTime))
         {
+            return GetCurrentTimeStatic(offset);
+        }
+
+        public static string GetCurrentTimeStatic(TimeSpan offset, DateTime time = default(DateTime))
+        {
+            if (time == default(DateTime))
+            {
+                time = DateTime.Now;
+            }
             Console.WriteLine("GetCurrentTime Called");
             string answer;
-            var val = TimeZone.CurrentTimeZone.ToUniversalTime(DateTime.Now);
+            var val = TimeZone.CurrentTimeZone.ToUniversalTime(time);
             int hours = offset.Hours;
             val = val.AddHours(hours);
             answer = string.Format("Aktuální čas serveru je: {0}", val.ToString("HH:mm:ss"));
@@ -54,25 +64,23 @@ namespace STINServer
 
         public string GetUserID()
         {
+            return GetUserIDStatic();
+        }
+
+        public static string GetUserIDStatic(RemoteEndpointMessageProperty endpointProperty = null)
+        {
             Console.WriteLine("GetUserID Called");
             string answer;
-            /*
-            OperationContext context = OperationContext.Current;
-
-            MessageProperties messageProperties = context.IncomingMessageProperties;
-
-            RemoteEndpointMessageProperty endpointProperty =
-                messageProperties[RemoteEndpointMessageProperty.Name]
-                as RemoteEndpointMessageProperty;
-            */
-            string ip = "";
-            var props = OperationContext.Current.IncomingMessageProperties;
-            var endpointProperty = props[RemoteEndpointMessageProperty.Name] as RemoteEndpointMessageProperty;
+            string ip = "ID nenalezeno";
+            if (endpointProperty == null)
+            {
+                var props = OperationContext.Current.IncomingMessageProperties;
+                endpointProperty = props[RemoteEndpointMessageProperty.Name] as RemoteEndpointMessageProperty;
+            }
             if (endpointProperty != null)
             {
-                 ip = endpointProperty.Address;
+                ip = endpointProperty.Address;
             }
-            Thread.Sleep(10000);
 
             answer = string.Format("ID clienta je: {0}", ip);
             return Wrapper.Wrap(answer);
